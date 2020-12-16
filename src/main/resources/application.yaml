@@ -1,0 +1,37 @@
+server:
+  port: 8075
+
+bot:
+  name: tourist_assistant_by_bot
+  token: 1236767246:AAE233wgRBcuN7ShLWHd6ZGZZfrAJ-O-Wjk
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tourist_assistant
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+
+logging:
+  io:
+    swagger:
+      models:
+        parameters:
+          AbstractSerializableParameter: error
+
+
+# Fix Postgres JPA Error:
+# Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+#spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults= false
