@@ -24,3 +24,43 @@ DEBUG http-nio-8075-exec-9 com.telegram.bot.service.impl.CityServiceImpl - Creat
 DEBUG http-nio-8075-exec-9 com.telegram.bot.service.impl.CityServiceImpl - City Россь3 added to repository
 DEBUG http-nio-8075-exec-5 com.telegram.bot.service.impl.CityServiceImpl - Created new City
 DEBUG http-nio-8075-exec-5 com.telegram.bot.service.impl.CityServiceImpl - City Россь4 added to repository
+ERROR http-nio-8075-exec-2 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-6 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-2 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-2 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-5 com.telegram.bot.service.impl.CityServiceImpl - Россь3 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - Россь3 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-2 com.telegram.bot.service.impl.CityServiceImpl - Россь3 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - Россь3 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-3 com.telegram.bot.service.impl.CityServiceImpl - Россь3 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-5 com.telegram.bot.service.impl.CityServiceImpl - Россь3 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - Россь3 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-2 com.telegram.bot.service.impl.CityServiceImpl - Россь3 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-4 com.telegram.bot.service.impl.CityServiceImpl - Россь2 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-10 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-2 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-5 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+DEBUG http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - Created new City
+DEBUG http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - City Россь4 added to repository
+ERROR http-nio-8075-exec-4 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+DEBUG http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - Created new City
+DEBUG http-nio-8075-exec-1 com.telegram.bot.service.impl.CityServiceImpl - City Россь4 added to repository
+ERROR http-nio-8075-exec-2 com.telegram.bot.service.impl.CityServiceImpl - Россь4 remove from repository: java.util.NoSuchElementException: No value present
+DEBUG http-nio-8075-exec-6 com.telegram.bot.service.impl.CityServiceImpl - Created new City
+DEBUG http-nio-8075-exec-6 com.telegram.bot.service.impl.CityServiceImpl - City Россь4 added to repository
+DEBUG http-nio-8075-exec-3 com.telegram.bot.service.impl.CityServiceImpl - Created new City
+DEBUG http-nio-8075-exec-3 com.telegram.bot.service.impl.CityServiceImpl - City Россь4 added to repository
+DEBUG http-nio-8075-exec-3 com.telegram.bot.service.impl.AttractionServiceImpl - Created new attraction
+DEBUG http-nio-8075-exec-2 com.telegram.bot.service.impl.AttractionServiceImpl - Created new attraction
+ERROR http-nio-8075-exec-9 com.telegram.bot.service.impl.AttractionServiceImpl - цукен2 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-10 com.telegram.bot.service.impl.AttractionServiceImpl - цукен2 remove from repository: java.util.NoSuchElementException: No value present
+ERROR http-nio-8075-exec-1 com.telegram.bot.service.impl.AttractionServiceImpl - цукен2 remove from repository: java.util.NoSuchElementException: No value present
+DEBUG http-nio-8075-exec-2 com.telegram.bot.service.impl.AttractionServiceImpl - Created new attraction
+ERROR http-nio-8075-exec-3 com.telegram.bot.service.impl.AttractionServiceImpl - цукен2 remove from repository: java.util.NoSuchElementException: No value present

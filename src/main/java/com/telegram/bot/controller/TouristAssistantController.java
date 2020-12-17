@@ -27,7 +27,7 @@ public class TouristAssistantController {
     @ApiOperation(value = "Найти город по id")
     @ApiResponses({
             @ApiResponse(code = 200, message = "Запрос успешно обработан"),
-            @ApiResponse(code = 204, message = "Нет содержимого для ответа на запрос"),
+            @ApiResponse(code = 204, message = "Запрос успешно обработан"),
             @ApiResponse(code = 403, message = "Операция не позволена"),
             @ApiResponse(code = 404, message = "Сервер не может найти запрашиваемый ресурс"),
     })
@@ -40,7 +40,7 @@ public class TouristAssistantController {
     @ApiOperation(value = "Найти город по названию")
     @ApiResponses({
             @ApiResponse(code = 200, message = "Запрос успешно обработан"),
-            @ApiResponse(code = 204, message = "Нет содержимого для ответа на запрос"),
+            @ApiResponse(code = 204, message = "Запрос успешно обработан"),
             @ApiResponse(code = 403, message = "Операция не позволена"),
             @ApiResponse(code = 404, message = "Сервер не может найти запрашиваемый ресурс"),
     })
@@ -53,6 +53,7 @@ public class TouristAssistantController {
     @ApiOperation(value = "Полная информация о городах и достопримечательностях")
     @ApiResponses({
             @ApiResponse(code = 200, message = "Запрос успешно обработан"),
+            @ApiResponse(code = 204, message = "Запрос успешно обработан"),
             @ApiResponse(code = 400, message = "Неверные параметры запроса"),
             @ApiResponse(code = 403, message = "Операция не позволена"),
             @ApiResponse(code = 404, message = "Сервер не может найти запрашиваемый ресурс"),
@@ -66,7 +67,7 @@ public class TouristAssistantController {
     @ApiOperation(value = "Найти достопримечательность по id")
     @ApiResponses({
             @ApiResponse(code = 200, message = "Запрос успешно обработан"),
-            @ApiResponse(code = 204, message = "Нет содержимого для ответа на запрос"),
+            @ApiResponse(code = 204, message = "Запрос успешно обработан"),
             @ApiResponse(code = 403, message = "Операция не позволена"),
             @ApiResponse(code = 404, message = "Сервер не может найти запрашиваемый ресурс"),
     })
@@ -79,7 +80,7 @@ public class TouristAssistantController {
     @ApiOperation(value = "Найти достопримечательность по названию")
     @ApiResponses({
             @ApiResponse(code = 200, message = "Запрос успешно обработан"),
-            @ApiResponse(code = 204, message = "Нет содержимого для ответа на запрос"),
+            @ApiResponse(code = 204, message = "Запрос успешно обработан"),
             @ApiResponse(code = 403, message = "Операция не позволена"),
             @ApiResponse(code = 404, message = "Сервер не может найти запрашиваемый ресурс"),
     })
@@ -106,6 +107,7 @@ public class TouristAssistantController {
     @ApiOperation(value = "Добавить достопримечательность")
     @ApiResponses({
             @ApiResponse(code = 200, message = "Запрос успешно обработан"),
+            @ApiResponse(code = 204, message = "Запрос успешно обработан"),
             @ApiResponse(code = 400, message = "Неверные параметры запроса"),
             @ApiResponse(code = 403, message = "Операция не позволена"),
             @ApiResponse(code = 404, message = "Сервер не может найти запрашиваемый ресурс"),
@@ -120,6 +122,7 @@ public class TouristAssistantController {
     @ApiOperation(value = "Удалить достопримечательность")
     @ApiResponses({
             @ApiResponse(code = 200, message = "Запрос успешно обработан"),
+            @ApiResponse(code = 204, message = "Запрос успешно обработан"),
             @ApiResponse(code = 400, message = "Неверные параметры запроса"),
             @ApiResponse(code = 403, message = "Операция не позволена"),
             @ApiResponse(code = 404, message = "Сервер не может найти запрашиваемый ресурс"),
@@ -135,6 +138,7 @@ public class TouristAssistantController {
     @ApiOperation(value = "Удалить город")
     @ApiResponses({
             @ApiResponse(code = 200, message = "Запрос успешно обработан"),
+            @ApiResponse(code = 204, message = "Запрос успешно обработан"),
             @ApiResponse(code = 400, message = "Неверные параметры запроса"),
             @ApiResponse(code = 403, message = "Операция не позволена"),
             @ApiResponse(code = 404, message = "Сервер не может найти запрашиваемый ресурс"),

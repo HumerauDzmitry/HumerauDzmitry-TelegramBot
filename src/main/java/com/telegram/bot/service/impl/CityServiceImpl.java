@@ -3,6 +3,7 @@ package com.telegram.bot.service.impl;
 import com.telegram.bot.dto.CityDto;
 import com.telegram.bot.entity.City;
 import com.telegram.bot.enums.Status;
+import com.telegram.bot.exception.*;
 import com.telegram.bot.repository.CityRepository;
 import com.telegram.bot.service.CityService;
 import com.telegram.bot.service.mapper.CityMapper;
@@ -42,20 +43,26 @@ public class CityServiceImpl implements CityService {
 
     @Override
     public void addCity(String name) {
-        Optional<City> city = cityRepository.findByName(name);
+
+        Optional<City> city = Optional.empty();
+        city = cityRepository.findByName(name);
         if(!city.isPresent()) {
             city = Optional.of(this.createCity(name));
             cityRepository.save(city.get());
             log.debug("City " + name + " added to repository");
+        } else {
+            throw new NoSuchElementException("no city");
         }
     }
 
     @Override
     public void deleteCity(String name){
+        System.out.println();
         try {
             cityRepository.delete(cityRepository.findByName(name).get());
         } catch (NoSuchElementException e) {
             log.error(name + " remove from repository: " + e);
+            throw new NoSuchElementException(e);
         }
     }
 

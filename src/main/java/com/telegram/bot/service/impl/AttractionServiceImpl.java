@@ -41,15 +41,20 @@ public class AttractionServiceImpl implements AttractionService {
     @Override
     public void addAttractionAroundCity(String cityName, String attractionName) {
         Optional<City> city = cityRepository.findByName(cityName);
-        List<Attraction> attractionList = new ArrayList<>();
-        if (city.get().getAttractionList().size() != 0) {
-            attractionList = city.get().getAttractionList();
-        }
         Optional<Attraction> attraction = attractionRepository.findByName(attractionName);
-        if (!attraction.isPresent()) {
-            attraction = Optional.of(this.createAttraction(attractionName));
-            attractionList.add(attraction.get());
-            cityRepository.findByName(cityName).get().setAttractionList(attractionList);
+        List<Attraction> attractionList = new ArrayList<>();
+        if (city.isPresent() && !attraction.isPresent()) {
+            if (city.get().getAttractionList().size() != 0) {
+                attractionList = city.get().getAttractionList();
+            }
+            attraction = attractionRepository.findByName(attractionName);
+            if (!attraction.isPresent()) {
+                attraction = Optional.of(this.createAttraction(attractionName));
+                attractionList.add(attraction.get());
+                cityRepository.findByName(cityName).get().setAttractionList(attractionList);
+            }
+        } else {
+            throw new NoSuchElementException("no city");
         }
     }
 
@@ -62,6 +67,7 @@ public class AttractionServiceImpl implements AttractionService {
             attractionRepository.delete(attraction.get());
         } catch (NoSuchElementException e) {
             log.error(attractionName + " remove from repository: " + e);
+            throw new NoSuchElementException("no city");
         }
     }
 
