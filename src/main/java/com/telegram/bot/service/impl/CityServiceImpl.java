@@ -44,8 +44,7 @@ public class CityServiceImpl implements CityService {
     @Override
     public void addCity(String name) {
 
-        Optional<City> city = Optional.empty();
-        city = cityRepository.findByName(name);
+        Optional<City> city = cityRepository.findByName(name);
         if(!city.isPresent()) {
             city = Optional.of(this.createCity(name));
             cityRepository.save(city.get());

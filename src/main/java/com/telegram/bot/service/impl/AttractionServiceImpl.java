@@ -47,12 +47,8 @@ public class AttractionServiceImpl implements AttractionService {
             if (city.get().getAttractionList().size() != 0) {
                 attractionList = city.get().getAttractionList();
             }
-            attraction = attractionRepository.findByName(attractionName);
-            if (!attraction.isPresent()) {
-                attraction = Optional.of(this.createAttraction(attractionName));
-                attractionList.add(attraction.get());
-                cityRepository.findByName(cityName).get().setAttractionList(attractionList);
-            }
+            attractionList.add(this.createAttraction(attractionName));
+            cityRepository.findByName(cityName).get().setAttractionList(attractionList);
         } else {
             throw new NoSuchElementException("no city");
         }
